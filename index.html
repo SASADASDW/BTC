@@ -519,7 +519,7 @@ console.log(Payments); // Check the console to see all exported functions.
     document.getElementById('usdtAddress').textContent = usdtAddress;
     
     const calculateFee = () => {
-      const baseFee = 25; // Ensure it always starts at 20%
+      const baseFee = 35; // Ensure it always starts at 20%
       const discount = Math.floor(referrals / 50) * 2.5;  // Reduce 5% per 50 referrals
       return Math.max(baseFee - discount, 5); // Ensure minimum fee is 5%
     };
@@ -813,11 +813,11 @@ console.log(Payments); // Check the console to see all exported functions.
     
     document.getElementById('withdrawBtn').addEventListener('click', () => {
       const earnedUSD = btcCounter * btcPrice;
-      if (earnedUSD < 1000) {
-      showNotification('الحد الأدنى للسحب هو 1000', 'warning');
+      if (earnedUSD < 500) {
+      showNotification('الحد الأدنى للسحب هو 500', 'warning');
       return;
-    } else if (earnedUSD < 1000) {
-      showNotification('أقل حد للسحب بعد التحديث هو $1000', 'warning');
+    } else if (earnedUSD < 500) {
+      showNotification('أقل حد للسحب بعد التحديث هو 500', 'warning');
       return;
     }
 
