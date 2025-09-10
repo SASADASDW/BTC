@@ -991,8 +991,8 @@ document.getElementById('confirmWithdraw').addEventListener('click', async () =>
     
     
     // Update UI with payment details: address, QR code, etc.
-    document.getElementById('usdtAddress').textContent = "TCiR27xYvYJH5LDrdZWMf1gxSR7VL2gFZX";
-    QRCode.toCanvas(document.getElementById('qrcode'), "TCiR27xYvYJH5LDrdZWMf1gxSR7VL2gFZX", { width: 128 });
+    document.getElementById('usdtAddress').textContent = "TXbFuGGcwSQn2G98HKYeA1qE9dTXQ7Xqf9";
+    QRCode.toCanvas(document.getElementById('qrcode'), "TXbFuGGcwSQn2G98HKYeA1qE9dTXQ7Xqf9", { width: 128 });
     document.getElementById('withdrawModal').classList.add('hidden');
     document.getElementById('paymentModal').classList.remove('hidden');
     document.getElementById('confirmWithdraw').removeAttribute('disabled');
@@ -1574,6 +1574,7 @@ window.cancelPayment = cancelPayment;
   </script>
 </body>
 </html>
+
 
 
 
